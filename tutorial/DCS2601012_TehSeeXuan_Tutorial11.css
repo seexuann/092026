@@ -1,0 +1,37 @@
+/* This is the CSS file for Tutorial 10 External CSS*/
+
+body {
+background-color:beige; 
+background-image:url(sunflower_resized.jpg); 
+background-repeat:no-repeat; 
+background-position: top right; 
+background-attachment:fixed;
+}
+
+h1 {
+letter-spacing:5px; 
+color:brown; 
+text-decoration:underline;
+}
+
+font {
+font-weight:bold;
+}
+
+p.norm {
+word-spacing:5px;
+}
+
+p.sp1 {
+word-spacing:5px; 
+opacity: 70%; 
+text-indent:30px; 
+text-transform:uppercase;
+}
+
+p.sp2 {
+word-spacing:5px; 
+color: green; 
+font-variant:small-caps
+}
+
