@@ -27,7 +27,7 @@ function validateLogin() {
 
  } else {
    alert("Successfully logged in");
-   window.location.replace("DCS2601012_TehSeeXuan_Project_Main.html");
+   window.location.replace("home.html");
    return true;
 }
 
