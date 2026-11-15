@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>June's Sale</title>
+<link rel=icon href="maple.png" type/png>
+<script type="text/javascript" src="project_script.js">
+</script>
+<link rel=stylesheet href="project.css">
+
+</head>
+<body>
+
+<header>
+<h1>June's</h1>
+<p>Redefining fashion.</p>
+</header>
+
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+
+<nav id="myMenu">
+<a href="login.html" target="content"><h3>Login</h3></a>
+<a href="home.html" target="content"><h3>Home</h3></a>
+<a href="browser.html" target="content"><h3>Browse</h3></a>
+<a href="sale.html" target="content"><h3>Sale</h3></a>
+<a href="contact.html" target="content"><h3>Contact</h3></a>
+
+<button class="cart-button" onclick="openCart()">
+<img src="cart.png" style="width:30px;" alt="cart"> (<span id="cart-count">0</span>)
+</button>
+
+</nav>
+
+<div class="cart-overlay" id="cart-overlay"
+onclick="closeCart(event)">
+
+ <div class="cart-panel" onclick="event.stopPropagation()">
+
+  <div class="cart-header">
+   <h2>Shopping Cart</h2>
+   <button class="close-cart" onclick="openCart()">x</button>
+  </div>
+
+  <div id="cart-items"></div>
+
+   <div class="cart-total">
+    <span>Total:</span>
+    <span id="cart-total">RM 0.00</span>
+   </div>
+
+   <button class="checkout-button" onclick="checkout()">
+    CHECKOUT
+   </button>
+
+   </div>
+ </div>
+
+</div>
+
+<main class="main">
+
+<center>
+
+<h1 class="headings">SALE up to 50%</h1>
+<p class="browse">NOTE: All products are <span class="note">free size.</span></p><br>
+
+<div class="products">
+
+ <div class="product-card">
+  <div class="product-image">
+   <img src="greensweater.png" class="image">
+  </div>
+  <div class="product-info">
+   <button class="add-button" onclick="addToCart(3)">Add to cart</button>
+   <h3 class="name">Green Sweater</h3>
+   <span class="sale-price">50% OFF - RM 39.90</span>
+   <span class="og-price">RM 79.90</span>
+  </div>
+ </div>
+
+ <div class="product-card">
+  <div class="product-image">
+   <img src="menssweater.png" class="image">
+  </div>
+  <div class="product-info">
+   <button class="add-button" onclick="addToCart(7)">Add to cart</button>
+   <h3 class="name">Dark Blue Sweater</h3>
+   <span class="sale-price">50% OFF - RM 39.90</span>
+   <span class="og-price">RM 79.90</span>
+  </div>
+ </div>
+
+</div>
+
+</center>
+<br><br><br><br><br><br><br><br>
+</main>
+
+<footer>
+<p>Copyright © June's Co., Ltd. All rights reserved.<br>
+HTML, CSS, JavaScript E-Commerce site made by DCS2601012 Teh See Xuan</p>
+</footer>
+
+</body>
+</html>

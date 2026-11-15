@@ -1,0 +1,381 @@
+/*DCS2601012 TEH SEE XUAN*/
+
+body {
+background-image:url(clothing.png);
+background-size:cover;
+}
+
+header {
+background-color:#f7d781;
+text-align: center;
+padding: 20px;
+color:white;
+}
+
+nav {
+background-color:#fae5ac;
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+nav a {
+color: white;
+text-decoration: none;
+padding: 5px 20px;
+display: block;
+}
+
+nav a:hover {
+color: #ffffff;
+background-color: #f7d781;
+border-radius: 4px;
+}
+
+main.main {
+padding:40px;
+max-width:80%;
+margin:auto;
+background-color:white;
+border-radius:8px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+main.login {
+padding:40px;
+max-width:800px;
+margin:auto;
+background-color:white;
+border-radius:8px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+input[type=text] {
+padding: 10px;
+}
+
+input[type=password] {
+padding: 10px;
+}
+
+main.form {
+padding:60px 40px;
+max-width:600px;
+margin:auto;
+background-color:white;
+border-radius:8px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+}
+
+main.home {
+padding:100px;
+max-width:70%;
+margin:auto;
+background-color:0;
+}
+
+.info {
+background: white;
+padding: 20px;
+}
+
+footer {
+background-color:#fae5ac;
+text-align:center;
+color:white;
+padding:15px;
+}
+
+h1.headings {
+font-family:Times New Roman;
+font-size:37px;
+}
+
+h1.titles {
+text-align: left; 
+padding-left: 100px; 
+padding-bottom: 30px; 
+padding-top: 30px; 
+font-size: 35px;
+}
+
+p.underline {
+text-decoration:underline;
+color:blue;
+font-size:15px;
+}
+
+p.button {
+font-family:Times New Roman;
+font-size:20px;
+font-weight:bold;
+color:red;
+}
+
+p.browse {
+font-family:Times New Roman;
+font-size:15px;
+font-weight:bold;
+color:black;
+}
+
+p.cnt {
+font-size: 20px;
+padding: 10px;
+}
+
+.note {
+font-family:Times New Roman;
+font-size:15px;
+font-weight:bold;
+color:red;
+}
+
+h1.form {
+font-family: Times New Roman;
+color:red;
+}
+
+p.form {
+font-family:Times New Roman;
+font-size:18px;
+font-weight:bold;
+}
+
+input[type="submit"] {
+width:99%;
+height:50px;
+background-color:#fae5ac;
+}
+
+input[type="submit"]:hover {
+background-color: #f7d781
+}
+
+.homenav {
+border-radius:5px; 
+width:300px; 
+height:70px;
+background-color:#fae5ac;
+}
+
+.homenav:hover {
+background-color:#f7d781;
+cursor:pointer;
+}
+
+/* HAMBURGER */
+.menu-button {
+display:none;
+background-color:#fae5ac;
+color:white;
+font-size:25px;
+border:none;
+padding:10px 15px;
+cursor:pointer;
+}
+
+@media screen and (max-width:600px) {
+
+.menu-button {
+display:block;
+}
+
+nav {
+display:none;
+flex-direction:column;
+}
+
+nav a {
+text-align:left;
+padding: 2px 30px;
+border: 1px solid white;
+}
+
+}
+
+/* CART */
+
+.cart-button {
+border: none;
+background: 0;
+color: #572b11;
+padding: 10px;
+cursor: pointer;
+border-radius: 10px;
+}
+
+.cart-button:hover {
+background: #f7d781;
+}
+
+.menu-toggle {
+display: none;
+font-size: 27px;
+background: none;
+border: none;
+cursor: pointer;
+}
+
+
+.cart-overlay {
+display: none;
+position: fixed;
+inset: 0;
+background-color: rgba(0,0,0,.5);
+z-index: 200;
+}
+
+.cart-overlay.show {
+display: block;
+}
+
+.cart-panel {
+position: absolute;
+right: 0;
+top: 0;
+width: min(420px, 100%);
+height: 100%;
+background: white;
+padding: 25px;
+overflow-y: auto;
+}
+
+.cart-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+margin-bottom: 25px;
+}
+
+.close-cart {
+border: none;
+background: none;
+font-size: 25px;
+cursor: pointer;
+}
+
+.cart-item {
+display: flex;
+gap: 15px;
+padding: 15px 0;
+border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+width: 75px;
+height: 90px;
+object-fit: cover;
+}
+
+.cart-item-info {
+flex: 1;
+}
+
+.cart-item-info h4 {
+margin-bottom: 8px;
+}
+
+.quantity {
+display: flex;
+align-items: center;
+gap: 12px;
+margin-top: 10px;
+}
+
+.quantity button {
+width: 25px;
+height: 25px;
+cursor: pointer;
+}
+
+.remove-button {
+background: none;
+border: none;
+color: #cc1212;
+cursor: pointer;
+margin-top: 8px;
+}
+
+.remove-button:hover {
+color: #850000;
+text-decoration: underline;
+}
+
+.cart-total {
+display: flex;
+justify-content: space-between;
+font-size: 20px;
+font-weight: bold;
+margin-top: 25px;
+}
+
+.checkout-button {
+width: 100%;
+padding: 15px;
+background: #f7d781;
+font-weight: bold;
+color: white;
+border: none;
+margin-top: 20px;
+cursor: pointer;
+}
+
+.checkout-button:hover {
+background: #e6c367;
+color: red;
+}
+
+.empty-cart {
+text-align: center;
+padding: 40px 0;
+color: #5c5b5b;
+}
+
+/* PRODUCT */
+
+.products {
+display: flex;
+justify-content: center;
+gap: 50px;
+flex-wrap: wrap;
+}
+
+.product-card {
+width: 300px;
+border-radius:10px;
+box-shadow:0 4px 8px rgba(0,0,0,0.1);
+padding: 20px 10px;
+}
+
+.image {
+width: 300px;
+border-radius:10px;
+}
+
+.add-button {
+border-radius: 3px;
+border: none;
+font-family: Arial;
+font-size: 15px;
+font-weight: bold;
+padding: 10px 100px;
+background-color: #fae5ac;
+border-radius:5px;
+}
+
+.add-button:hover {
+background-color: #f7d781;
+cursor: pointer;
+color: red;
+}
+
+.og-price {
+padding-left: 10px;
+opacity: 60%;
+text-decoration: line-through;
+}
+
+.sale-price {
+font-weight: bold;
+}

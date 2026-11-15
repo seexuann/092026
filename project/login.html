@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>June's Login</title>
+<link rel=icon href="maple.png" type/png>
+<script type="text/javascript" src="project_script.js">
+</script>
+<link rel=stylesheet href="project.css">
+
+</head>
+<body>
+
+<header>
+<h1>June's</h1>
+<p>Redefining fashion.</p>
+</header>
+
+<button class="menu-button" onclick="toggleMenu()">☰</button>
+
+<nav id="myMenu">
+<a href="login.html" target="content"><h3>Login</h3></a>
+<a href="home.html" target="content"><h3>Home</h3></a>
+<a href="browser.html" target="content"><h3>Browse</h3></a>
+<a href="sale.html" target="content"><h3>Sale</h3></a>
+<a href="contact.html" target="content"><h3>Contact</h3></a>
+
+<button class="cart-button" onclick="loginCart()">
+<img src="cart.png" style="width:30px;" alt="cart"> (<span id="cart-count">0</span>)
+</button>
+
+</nav>
+
+<main class="login">
+
+<center>
+
+<h2>Welcome, please enter your user information.</h2>
+
+<br>
+
+<form name="LoginForm" onsubmit="validateLogin(); return false;">
+
+
+<label for="username">Username: <input type="text" id="username" name="username" placeholder="Username" autofocus size=30%><br></label><br>
+      
+
+<label for="password">Password: <input type="password" id="password" name="password" placeholder="Password" minlength=8 size=30%><br><br></label><br>
+        
+
+<input type="submit" style="width: 80px; height: 30px; font-weight: bold; font-family: Times New Roman; border: solid black 1px; background: #fae5ac; border-radius: 10px;" onmouseover="bigButton(this)" onmouseout="normalButton(this)" value="Login">
+<br><br>
+
+<p class="underline"><a href="mailto:support@junes.com" title="Contact Support">Forgot password?</a></p>
+
+</form>
+</center>
+<br><br><br><br><br><br><br><br><br><br><br><br>
+</main>
+
+<footer>
+<p>Copyright © June's Co., Ltd. All rights reserved.<br>
+HTML, CSS, JavaScript E-Commerce site made by DCS2601012 Teh See Xuan</p>
+</footer>
+
+</body>
+</html>
