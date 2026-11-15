@@ -1,1 +1,1 @@
-Default folder for Project
+<h1>Default page for Project</h1>
